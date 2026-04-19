@@ -56,7 +56,6 @@ El sistema se compone de las siguientes entidades principales (objetos del mundo
 * **Oferta**
     - id, descuento, vigencia
 
-> **Nota:** El "Comparador" se implementa como un servicio de lógica de sistema y no como una entidad de dominio.
 
 ---
 
