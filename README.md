@@ -30,34 +30,35 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 | ID | Nombre | Issue |
 | :--- | :--- | :--- |
-| **US-01** | Registrar cuenta de usuario | #1 |
-| **US-02** | Iniciar sesión (Auth JWT) | #2 |
-| **US-03** | Búsqueda de productos por filtros | #3 |
-| **US-04** | Comparación de precios multitienda | #4 |
-| **US-05** | Visualización de disponibilidad de stock | #5 |
-| **US-06** | Dashboard de ofertas destacadas | #6 |
+| **US-01** | Registrar cuenta de usuario | #12 |
+| **US-02** | Iniciar sesión | #13 |
+| **US-03** | Búsqueda de productos por filtros | #14 |
+| **US-04** | Comparación de precios multitienda | #15 |
+| **US-05** | Visualización de disponibilidad de stock | #16 |
+| **US-06** | Dashboard de ofertas destacadas | #17 |
+
+
 
 ---
 
+## 🧩 Entidades de Dominio
 
+El sistema se compone de las siguientes entidades principales (objetos del mundo real):
 
-## 🧩 Entidades del Dominio
+* **Usuario**
+    - id, nombre, email, contraseña
+* **Producto**
+    - id, nombre, categoría
+* **Supermercado**
+    - id, nombre, ubicación
+* **Precio**
+    - id, valor, fecha, producto_id, supermercado_id
+* **Oferta**
+    - id, descuento, vigencia
 
-El sistema se articula en torno a las siguientes entidades que gestionan la lógica del negocio:
-
-* **Usuario:** Maneja el perfil personal, las credenciales de acceso y las preferencias de búsqueda dentro de la plataforma.
-* **Producto:** Maneja la información técnica, categorías y descriptores de los artículos consultados.
-* **Tienda:** Maneja la relación con los proveedores externos, incluyendo la ubicación de sucursales y la disponibilidad de servicios.
-* **Comparador:** Maneja el núcleo de la lógica; procesa precios, ofertas vigentes y niveles de stock de múltiples fuentes en tiempo real.
+> **Nota:** El "Comparador" se implementa como un servicio de lógica de sistema y no como una entidad de dominio.
 
 ---
-
-
-
-
-
-
-
 
 
 ## ⚙️ Características Funcionales
@@ -68,10 +69,8 @@ El sistema se articula en torno a las siguientes entidades que gestionan la lóg
 | **Comparativa Multitienda** | Despliegue de precios y ofertas de diversas fuentes simultáneamente. |
 | **Sugerencias Dinámicas** | Motor de recomendaciones para minimizar la carga cognitiva. |
 | **Monitoreo de Stock Real** | Verificación de disponibilidad de artículos en tiempo real. |
-| **Dashboard de Ofertas** | Panel principal con artículos destacados por relevancia. |
 
 ---
 
 ## 🎨 Diseño (Figma)
-Puedes revisar el prototipo funcional en el siguiente enlace:
 🔗 [Prototipo en Figma](https://rack-studio-58141370.figma.site/login)
