@@ -21,7 +21,7 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 | :--- | :--- | :--- |
 | **Vicente Fernandez Simonetti** | Scrum Master | Facilitación de Ceremonias, Gestión de Impedimentos, Seguimiento de Atributos de Calidad. |
 | **Joaquín Rodríguez López** | Product Owner | Gestión de Backlog, Definición de Historias de Usuario (US), Validación de Valor de Negocio. |
-| **Máximo Torrijo Espinoza** | Developer | Capa de Cliente (Frontend), Módulo de Autenticación (JWT), Diseño de Interfaz (Figma. |
+| **Máximo Torrijo Espinoza** | Developer | Capa de Cliente (Frontend), Módulo de Autenticación (JWT), Diseño de Interfaz (Figma). |
 | **Joaquín Thomas Rojas Toledo** | Developer | Capa de Lógica (Backend), Integración de Adaptadores (APIs Externas), Persistencia (SQL/Redis). |
 
 ---
@@ -40,17 +40,22 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 ---
 
 
-## 💻 Stack Tecnológico (Gestión del Sistema)
 
-De acuerdo a la arquitectura distribuida, el sistema es gestionado bajo el siguiente esquema de responsabilidades técnicas:
+## 🧩 Entidades del Dominio
 
-* **Capa de Cliente:** Maneja la interfaz responsiva y la comunicación asíncrona mediante JSON.
-* **Capa de Acceso:** Gestiona la seguridad centralizada (Auth Service) y el control de tráfico (Rate Limiter).
-* **Capa de Lógica:** Maneja el motor de búsqueda, las reglas de comparación y la integridad de los datos de stock.
-* **Capa de Integración:** Gestiona los adaptadores que permiten la interoperabilidad con fuentes externas (Lider, Jumbo, Santa Isabel).
-* **Capa de Datos:** Maneja la persistencia de usuarios en BD relacionales y la velocidad de respuesta mediante el cacheo en Redis.
+El sistema se articula en torno a las siguientes entidades que gestionan la lógica del negocio:
+
+* **Usuario:** Maneja el perfil personal, las credenciales de acceso y las preferencias de búsqueda dentro de la plataforma.
+* **Producto:** Maneja la información técnica, categorías y descriptores de los artículos consultados.
+* **Tienda:** Maneja la relación con los proveedores externos, incluyendo la ubicación de sucursales y la disponibilidad de servicios.
+* **Comparador:** Maneja el núcleo de la lógica; procesa precios, ofertas vigentes y niveles de stock de múltiples fuentes en tiempo real.
 
 ---
+
+
+
+---
+
 
 
 ---
