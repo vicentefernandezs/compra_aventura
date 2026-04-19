@@ -1,4 +1,4 @@
-# 🛒 ComprAventura: Sistema Inteligente de Comparativa Multitienda y Optimización de Consumo
+# 🛒 Compra Aventura: Sistema Inteligente de Comparativa Multitienda y Optimización de Consumo
 
 ## 📝 Problemática
 Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masivo mediante un motor de búsqueda avanzado. El objetivo es eliminar la brecha de información entre las cadenas de retail y los consumidores, permitiendo comparar costos, ofertas y disponibilidad de stock en tiempo real para facilitar una toma de decisiones eficiente y segura.
@@ -53,6 +53,34 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
+## 🚀 Requisitos Extrafuncionales
+
+### 1. Rendimiento
+- El sistema debe responder en menos de 2 segundos.
+- Debe soportar al menos 1000 usuarios simultáneos.
+
+### 2. Seguridad
+- Las contraseñas deben almacenarse encriptadas.
+- El sistema debe usar autenticación segura (**JWT**).
+
+### 3. Usabilidad
+- La interfaz debe ser intuitiva y fácil de usar.
+- El sistema debe ser accesible desde dispositivos móviles.
+
+### 4. Disponibilidad
+- El sistema debe estar disponible el 99% del tiempo.
+
+### 5. Compatibilidad
+- Debe funcionar en navegadores Chrome, Edge y Firefox.
+
+### 6. Escalabilidad
+- El sistema debe poder aumentar su capacidad sin afectar el rendimiento.
+
+### 7. Mantenibilidad
+- El código debe estar documentado y organizado.
+
+---
+
 ## 🔄 Flujo del Usuario
 
 1.  **Autenticación:** El usuario accede mediante un login seguro para personalizar su experiencia.
@@ -73,15 +101,6 @@ Se ha optado por una **arquitectura multicapa distribuida** para asegurar escala
 * **Capa de Datos (Persistencia):**
     * **PostgreSQL / MySQL:** Para gestión de usuarios y datos relacionales.
     * **Redis:** Cacheo temporal de precios para optimizar el rendimiento.
-
----
-
-## 🛡️ Atributos de Calidad
-
-* **SEGURIDAD (Prioridad Alta):** Autenticación centralizada y manejo de credenciales cifradas.
-* **USABILIDAD:** Interfaz diseñada para minimizar la carga cognitiva mediante sugerencias dinámicas.
-* **DISPONIBILIDAD:** Entrega de datos precisos sobre el stock para reflejar la realidad del mercado.
-* **RENDIMIENTO:** Optimización de consultas y uso de caché para latencia mínima.
 
 ---
 
