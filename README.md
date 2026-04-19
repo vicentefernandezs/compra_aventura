@@ -15,6 +15,17 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
+## ## Responsabilidades del equipo
+
+| Integrante | Rol | Ítems de la rúbrica a cargo |
+| :--- | :--- | :--- |
+| **Joaquín Rodríguez López** | Product Owner | Gestión de Backlog, Definición de Historias de Usuario (US), Validación de Valor de Negocio. |
+| **Vicente Fernandez Simonetti** | Scrum Master | Facilitación de Ceremonias, Gestión de Impedimentos, Seguimiento de Atributos de Calidad. |
+| **Máximo Torrijo Espinoza** | Developer | Capa de Cliente (Frontend), Módulo de Autenticación (JWT), Diseño de Interfaz (Figma). |
+| **Joaquín Thomas Rojas Toledo** | Developer | Capa de Lógica (Backend), Integración de Adaptadores (APIs Externas), Persistencia (SQL/Redis). |
+
+---
+
 ## 📋 Historias de Usuario (Backlog)
 
 | ID | Nombre | Issue |
