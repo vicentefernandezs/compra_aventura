@@ -39,10 +39,35 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
+## 📐 Diseño Arquitectónico
 
+Se ha optado por una **arquitectura multicapa distribuida** para asegurar la escalabilidad, el mantenimiento y la correcta separación de responsabilidades:
 
+* **Capa de Cliente (Frontend):** Interfaz responsiva diseñada para el usuario final que se comunica con el servidor mediante **HTTP/REST (JSON)**.
+* **Capa de Acceso y Seguridad (API Gateway):** Gestiona el **Auth Service (JWT/Login)** y un **Rate Limiter** para evitar la saturación del sistema y garantizar un acceso seguro.
+* **Capa de Lógica de Negocio (Backend):** Contiene el motor de búsqueda, la lógica de ordenamiento del comparador de precios y el validador de stock.
+* **Capa de Integración (Adaptadores):** Implementa conectores específicos para cada cadena (**Lider, Jumbo, Santa Isabel**), permitiendo la interoperabilidad y el consumo de datos externos.
+* **Capa de Datos (Persistencia):**
+    * **Bases de Datos Relacionales (PostgreSQL/MySQL):** Para la gestión persistente de usuarios.
+    * **Redis:** Cacheo temporal de precios para optimizar el rendimiento y minimizar la latencia.
 
 ---
+
+## 💻 Stack Tecnológico
+
+Para el desarrollo de **Compra Aventura** se han seleccionado las siguientes tecnologías:
+
+* **Frontend:** React.js / Next.js para una interfaz dinámica y responsiva.
+* **Backend:** Node.js con Express para el manejo de la lógica de negocio y APIs.
+* **Autenticación:** JSON Web Tokens (JWT) para la gestión segura de sesiones.
+* **Base de Datos Relacional:** PostgreSQL o MySQL para la persistencia de usuarios y perfiles.
+* **Caché / NoSQL:** Redis para el almacenamiento temporal de precios y optimización de velocidad.
+* **Diseño:** Figma para el prototipado de alta fidelidad.
+
+---
+
+
+
 
 ## ⚙️ Características Funcionales
 
