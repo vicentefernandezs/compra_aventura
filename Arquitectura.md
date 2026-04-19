@@ -6,5 +6,5 @@ Se ha optado por una **arquitectura multicapa distribuida** para asegurar la esc
 * **Capa de Acceso y Seguridad (API Gateway):** Gestiona el **Auth Service (JWT/Login)** y un **Rate Limiter** para evitar la saturación del sistema y garantizar un acceso seguro.
 * **Capa de Lógica de Negocio (Backend):** Contiene el motor de búsqueda, la lógica de ordenamiento del comparador de precios y el validador de stock.
 * **Capa de Integración (Adaptadores):** Implementa conectores específicos para cada cadena (**Lider, Jumbo, Santa Isabel**), permitiendo la interoperabilidad y el consumo de datos externos.
-* **Capa de Datos (Persistencia):** * **Bases de Datos Relacionales (PostgreSQL/MySQL):** Para la gestión persistente de usuarios.
+* **Capa de Datos (Persistencia):** * **Bases de Datos Relacionales:** Gestión de usuarios y persistencia de perfiles.
     * **Redis:** Cacheo temporal de precios para optimizar el rendimiento y minimizar la latencia de respuesta.
