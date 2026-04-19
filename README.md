@@ -1,76 +1,66 @@
-================================================================================
-                                GLAMZ SOLUTIONS
-                    "Precision Data, Prime Decisions"
-================================================================================
+# 🛒 Comparador de Precios: Solución a la Asimetría de Información
 
-1. DESCRIPCIÓN DEL PROYECTO
-El sistema funciona como un motor de búsqueda y comparación de artículos de 
-consumo masivo. La solución aborda la asimetría de información en el mercado de 
-supermercados, entregando al usuario una visualización comparativa de precios, 
-ofertas vigentes y disponibilidad de stock en distintas cadenas en tiempo real.
+## 📝 Problemática
+Nuestro proyecto se enfoca en resolver la **asimetría de información** en el mercado de consumo masivo mediante un motor de búsqueda y comparación de precios. El objetivo principal es implementar una plataforma que permita a los usuarios visualizar comparativas de costos, ofertas vigentes y disponibilidad de stock en tiempo real entre distintas cadenas de supermercados, garantizando la **integridad de los datos** y optimizando la **eficiencia en la toma de decisiones**.
 
-2. PROBLEMÁTICA
-Nuestro proyecto se enfoca en resolver la asimetría de información mediante una 
-plataforma robusta que permita la trazabilidad de costos. El objetivo principal 
-es garantizar la integridad de los datos de usuario y optimizar la eficiencia 
-en la toma de decisiones de compra, eliminando la incertidumbre sobre la 
-disponibilidad de productos en góndola.
+---
 
-3. DISPOSICIÓN DEL EQUIPO DE TRABAJO
-   • Scrum Master:    Enano
-   • Product Owner:   René
-   • Developers:      Negra
-                      Mole
-                      Maski
+## 👥 Equipo de Trabajo (Scrum)
 
-4. CARACTERÍSTICAS DE ENFOQUE / FUNCIONALES
-   • Módulo de Autenticación: Sistema centralizado con manejo de sesiones y 
-     credenciales cifradas (JWT).
-   • Comparativa Multitienda: Procesamiento en paralelo de precios y ofertas 
-     de diversas fuentes.
-   • Sugerencias Dinámicas: Motor de recomendaciones para minimizar la carga 
-     cognitiva del usuario.
-   • Monitoreo de Stock Real: Verificación de disponibilidad sincronizada con 
-     la realidad de las tiendas.
-   • Optimización de Latencia: Consultas de alto rendimiento para despliegue 
-     inmediato de resultados.
+* **Product Owner:** René
+* **Scrum Master:** Enano
+* **Developers (Devs):**
+    * Negra
+    * Mole
+    * Maski
 
-5. FLUJO DEL USUARIO
-   1. Autenticación: Login seguro para personalización y acceso a perfiles.
-   2. Dashboard: Panel de ofertas destacadas mediante algoritmos de relevancia.
-   3. Búsqueda y Filtro: Selección de artículos y procesamiento de comparación.
-   4. Resultados: Visualización de precios, desglose de ofertas y stock.
+---
 
-6. ARQUITECTURA TÉCNICA
-   [ CAPA DE CLIENTE (Frontend) ]
-          |
-          | HTTP/REST (JSON)
-          v
-   [ CAPA DE ACCESO Y SEGURIDAD (API Gateway) ]
-          |-- Auth Service (JWT / Login)
-          |-- Rate Limiter (Evita saturación)
-          v
-   [ CAPA DE LÓGICA DE NEGOCIO (Backend) ]
-          |-- Motor de Búsqueda y Sugerencias
-          |-- Comparador de Precios (Lógica de ordenamiento)
-          |-- Validador de Stock
-          v
-   [ CAPA DE INTEGRACIÓN (Adaptadores) ]
-          |-- Conectores: Lider, Jumbo, Santa Isabel
-          v
-   [ CAPA DE DATOS ]
-          |-- DB Usuarios (PostgreSQL/MySQL)
-          |-- Redis (Cache de precios temporal)
+## ⚙️ Características Funcionales
 
-7. ATRIBUTOS DE CALIDAD
-   • Seguridad (Prioridad Alta): Cifrado y manejo centralizado de sesiones.
-   • Usabilidad: Interfaz diseñada para la eficiencia en la búsqueda.
-   • Disponibilidad: Core enfocado en la precisión de datos en tiempo real.
-   • Rendimiento: Optimización de latencia en consultas distribuidas.
+| Módulo | Descripción |
+| :--- | :--- |
+| **Autenticación** | Sistema centralizado con manejo de sesiones y credenciales cifradas mediante **JWT**. |
+| **Comparativa Multitienda** | Motor de procesamiento que despliega precios y ofertas de diversas fuentes simultáneamente. |
+| **Sugerencias Dinámicas** | Interfaz intuitiva con recomendaciones para minimizar la carga cognitiva. |
+| **Monitoreo de Stock** | Verificación en tiempo real para asegurar que la consulta refleje la realidad de las góndolas. |
+| **Filtros Avanzados** | Procesamiento de comparación inmediata por categorías y artículos generales. |
+| **Dashboard de Ofertas** | Panel principal con artículos destacados basados en algoritmos de relevancia. |
+| **Optimización de Latencia** | Consultas optimizadas para el despliegue rápido desde múltiples fuentes externas. |
 
-8. PROTOTIPO (FIGMA)
-   URL: https://rack-studio-58141370.figma.site/login
+---
 
-================================================================================
- Desarrollado por GLAMZ Solutions para el curso de Bases de Datos I
-================================================================================
+## 🔄 Flujo del Usuario
+
+1.  **Autenticación:** El usuario accede mediante un login seguro para personalizar su experiencia.
+2.  **Dashboard Principal:** Visualización de artículos destacados y ofertas relevantes.
+3.  **Búsqueda y Filtro:** Selección de un artículo y procesamiento de la comparación multitienda.
+4.  **Visualización de Resultados:** Presentación de precios, desglose de ofertas y verificación de stock.
+
+---
+
+## 🏗️ Arquitectura del Sistema
+
+Se ha optado por una **arquitectura multicapa distribuida** para asegurar escalabilidad:
+
+* **Capa de Cliente (Frontend):** Interfaz responsiva comunicada mediante HTTP/REST (JSON).
+* **Capa de Acceso (API Gateway):** Gestiona el Auth Service y un **Rate Limiter** para estabilidad.
+* **Capa de Lógica (Backend):** Motor de búsqueda, lógica de ordenamiento y validador de stock.
+* **Capa de Integración (Adaptadores):** Conectores específicos para **Lider, Jumbo y Santa Isabel**.
+* **Capa de Datos (Persistencia):** * **PostgreSQL/MySQL:** Datos de usuarios.
+    * **Redis:** Cacheo temporal de precios para máximo rendimiento.
+
+---
+
+## 🛡️ Atributos de Calidad
+
+* **SEGURIDAD (Prioridad Alta):** Autenticación centralizada y cifrado de extremo a extremo.
+* **USABILIDAD:** Diseño centrado en el usuario para reducir el esfuerzo mental.
+* **DISPONIBILIDAD:** Datos precisos y consistentes sobre el stock por supermercado.
+* **RENDIMIENTO:** Latencia mínima mediante optimización de consultas y uso de caché.
+
+---
+
+## 🎨 Diseño (Figma)
+Puedes revisar el prototipo funcional en el siguiente enlace:
+🔗 [Prototipo en Figma](https://rack-studio-58141370.figma.site/login)
