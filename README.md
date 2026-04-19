@@ -54,11 +54,11 @@ El sistema se articula en torno a las siguientes entidades que gestionan la lóg
 
 
 
----
 
 
 
----
+
+
 
 ## ⚙️ Características Funcionales
 
