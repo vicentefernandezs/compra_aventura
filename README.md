@@ -1,4 +1,4 @@
-# 🛒 SmartPrice: Sistema Inteligente de Comparativa Multitienda y Optimización de Consumo
+# 🛒 Compra Aventura: Sistema Inteligente de Comparativa Multitienda y Optimización de Consumo
 
 ## 📝 Problemática
 Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masivo mediante un motor de búsqueda avanzado. El objetivo es eliminar la brecha de información entre las cadenas de retail y los consumidores, permitiendo comparar costos, ofertas y disponibilidad de stock en tiempo real para facilitar una toma de decisiones eficiente y segura.
