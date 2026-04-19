@@ -1,18 +1,18 @@
-# 🛒 Comparador de Precios: Solución a la Asimetría de Información
+# 🛒 SmartPrice: Sistema Inteligente de Comparativa Multitienda y Optimización de Consumo
 
 ## 📝 Problemática
-Nuestro proyecto se enfoca en resolver la **asimetría de información** en el mercado de consumo masivo mediante un motor de búsqueda y comparación de precios. El objetivo principal es implementar una plataforma que permita a los usuarios visualizar comparativas de costos, ofertas vigentes y disponibilidad de stock en tiempo real entre distintas cadenas de supermercados, garantizando la **integridad de los datos** y optimizando la **eficiencia en la toma de decisiones**.
+Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masivo mediante un motor de búsqueda avanzado. El objetivo es eliminar la brecha de información entre las cadenas de retail y los consumidores, permitiendo comparar costos, ofertas y disponibilidad de stock en tiempo real para facilitar una toma de decisiones eficiente y segura.
 
 ---
 
 ## 👥 Equipo de Trabajo (Scrum)
 
-* **Product Owner:** 
-* **Scrum Master:** 
+* **Product Owner:** René
+* **Scrum Master:** Enano
 * **Developers (Devs):**
-    * 
-    * 
-    * 
+    * Negra
+    * Mole
+    * Maski
 
 ---
 
@@ -41,23 +41,23 @@ Nuestro proyecto se enfoca en resolver la **asimetría de información** en el m
 
 ## 🏗️ Arquitectura del Sistema
 
-Se ha optado por una **arquitectura multicapa distribuida** para asegurar escalabilidad:
+Se ha optado por una **arquitectura multicapa distribuida** para asegurar escalabilidad y separación de responsabilidades:
 
 * **Capa de Cliente (Frontend):** Interfaz responsiva comunicada mediante HTTP/REST (JSON).
 * **Capa de Acceso (API Gateway):** Gestiona el Auth Service y un **Rate Limiter** para estabilidad.
 * **Capa de Lógica (Backend):** Motor de búsqueda, lógica de ordenamiento y validador de stock.
-* **Capa de Integración (Adaptadores):** Conectores específicos para **Lider, Jumbo y Santa Isabel**.
-* **Capa de Datos (Persistencia):** * **PostgreSQL/MySQL:** Datos de usuarios.
-    * **Redis:** Cacheo temporal de precios para máximo rendimiento.
+* **Capa de Integración (Adaptadores):** Conectores específicos para la interoperabilidad con **Lider, Jumbo y Santa Isabel**.
+* **Capa de Datos (Persistencia):** * **PostgreSQL / MySQL:** Para gestión de usuarios y datos relacionales.
+    * **Redis:** Cacheo temporal de precios para optimizar el rendimiento.
 
 ---
 
 ## 🛡️ Atributos de Calidad
 
-* **SEGURIDAD (Prioridad Alta):** Autenticación centralizada y cifrado de extremo a extremo.
-* **USABILIDAD:** Diseño centrado en el usuario para reducir el esfuerzo mental.
-* **DISPONIBILIDAD:** Datos precisos y consistentes sobre el stock por supermercado.
-* **RENDIMIENTO:** Latencia mínima mediante optimización de consultas y uso de caché.
+* **SEGURIDAD (Prioridad Alta):** Autenticación centralizada y manejo de credenciales cifradas.
+* **USABILIDAD:** Interfaz diseñada para minimizar la carga cognitiva mediante sugerencias dinámicas.
+* **DISPONIBILIDAD:** Entrega de datos precisos sobre el stock para reflejar la realidad del mercado.
+* **RENDIMIENTO:** Optimización de consultas y uso de caché para latencia mínima.
 
 ---
 
