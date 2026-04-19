@@ -72,5 +72,5 @@ disponibilidad de productos en góndola.
    URL: https://rack-studio-58141370.figma.site/login
 
 ================================================================================
- Desarrollado por GLAMZ Solutions para el curso de Bases de Datos I (2026)
+ Desarrollado por GLAMZ Solutions para el curso de Bases de Datos I
 ================================================================================
