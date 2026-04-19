@@ -90,17 +90,6 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
-## 🏗️ Arquitectura del Sistema
-
-Se ha optado por una **arquitectura multicapa distribuida** para asegurar escalabilidad y separación de responsabilidades:
-
-* **Capa de Cliente (Frontend):** Interfaz responsiva comunicada mediante HTTP/REST (JSON).
-* **Capa de Acceso (API Gateway):** Gestiona el Auth Service y un **Rate Limiter** para estabilidad.
-* **Capa de Lógica (Backend):** Motor de búsqueda, lógica de ordenamiento y validador de stock.
-* **Capa de Integración (Adaptadores):** Conectores específicos para la interoperabilidad con **Lider, Jumbo y Santa Isabel**.
-* **Capa de Datos (Persistencia):**
-    * **PostgreSQL / MySQL:** Para gestión de usuarios y datos relacionales.
-    * **Redis:** Cacheo temporal de precios para optimizar el rendimiento.
 
 ---
 
