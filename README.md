@@ -7,12 +7,24 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ## 👥 Equipo de Trabajo (Scrum)
 
-* **Product Owner:** René
-* **Scrum Master:** Enano
+* **Product Owner:** Joaquín Rodríguez López
+* **Scrum Master:** Vicente Fernandez Simonetti
 * **Developers (Devs):**
-    * Negra
-    * Mole
-    * Maski
+    * Máximo Torrijo Espinoza
+    * Joaquín Thomas Rojas Toledo
+
+---
+
+## 📋 Historias de Usuario (Backlog)
+
+| ID | Nombre | Issue |
+| :--- | :--- | :--- |
+| **US-01** | Registrar cuenta de usuario | #1 |
+| **US-02** | Iniciar sesión (Auth JWT) | #2 |
+| **US-03** | Búsqueda de productos por filtros | #3 |
+| **US-04** | Comparación de precios multitienda | #4 |
+| **US-05** | Visualización de disponibilidad de stock | #5 |
+| **US-06** | Dashboard de ofertas destacadas | #6 |
 
 ---
 
@@ -47,7 +59,8 @@ Se ha optado por una **arquitectura multicapa distribuida** para asegurar escala
 * **Capa de Acceso (API Gateway):** Gestiona el Auth Service y un **Rate Limiter** para estabilidad.
 * **Capa de Lógica (Backend):** Motor de búsqueda, lógica de ordenamiento y validador de stock.
 * **Capa de Integración (Adaptadores):** Conectores específicos para la interoperabilidad con **Lider, Jumbo y Santa Isabel**.
-* **Capa de Datos (Persistencia):** * **PostgreSQL / MySQL:** Para gestión de usuarios y datos relacionales.
+* **Capa de Datos (Persistencia):**
+    * **PostgreSQL / MySQL:** Para gestión de usuarios y datos relacionales.
     * **Redis:** Cacheo temporal de precios para optimizar el rendimiento.
 
 ---
