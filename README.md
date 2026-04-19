@@ -7,12 +7,12 @@ Nuestro proyecto se enfoca en resolver la **asimetría de información** en el m
 
 ## 👥 Equipo de Trabajo (Scrum)
 
-* **Product Owner:** René
-* **Scrum Master:** Enano
+* **Product Owner:** 
+* **Scrum Master:** 
 * **Developers (Devs):**
-    * Negra
-    * Mole
-    * Maski
+    * 
+    * 
+    * 
 
 ---
 
