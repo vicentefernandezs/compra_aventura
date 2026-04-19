@@ -15,7 +15,7 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
-## ## Responsabilidades del equipo
+## 🛠️ Responsabilidades del Equipo
 
 | Integrante | Rol | Ítems de la rúbrica a cargo |
 | :--- | :--- | :--- |
@@ -39,60 +39,56 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
+## 📐 Diseño Arquitectónico
+
+Se ha optado por una **arquitectura multicapa distribuida** para asegurar la escalabilidad, el mantenimiento y la correcta separación de responsabilidades:
+
+* **Capa de Cliente (Frontend):** Interfaz responsiva diseñada para el usuario final que se comunica con el servidor mediante **HTTP/REST (JSON)**.
+* **Capa de Acceso y Seguridad (API Gateway):** Gestiona el **Auth Service (JWT/Login)** y un **Rate Limiter** para evitar la saturación del sistema y garantizar un acceso seguro.
+* **Capa de Lógica de Negocio (Backend):** Contiene el motor de búsqueda, la lógica de ordenamiento del comparador de precios y el validador de stock.
+* **Capa de Integración (Adaptadores):** Implementa conectores específicos para cada cadena (**Lider, Jumbo, Santa Isabel**), permitiendo la interoperabilidad y el consumo de datos externos.
+* **Capa de Datos (Persistencia):**
+    * **Bases de Datos Relacionales (PostgreSQL/MySQL):** Para la gestión persistente de usuarios.
+    * **Redis:** Cacheo temporal de precios para optimizar el rendimiento y minimizar la latencia.
+
+---
+
+## 🛡️ Atributos de Calidad (Requisitos Extrafuncionales)
+
+El sistema debe cumplir con los siguientes estándares técnicos para asegurar una operación profesional:
+
+* **Rendimiento:**
+    * El sistema debe responder en menos de **2 segundos**.
+    * Capacidad para soportar al menos **1000 usuarios simultáneos**.
+* **Seguridad:**
+    * Las contraseñas deben almacenarse encriptadas mediante algoritmos de hash seguros.
+    * Implementación obligatoria de autenticación mediante **JWT (JSON Web Tokens)**.
+* **Usabilidad:**
+    * Interfaz intuitiva diseñada para minimizar la carga cognitiva.
+    * Diseño **Responsivo** (accesible desde dispositivos móviles y escritorio).
+* **Disponibilidad:**
+    * Garantía de operatividad del **99%** del tiempo.
+* **Compatibilidad:**
+    * Soporte completo para navegadores **Chrome, Edge y Firefox**.
+* **Escalabilidad:**
+    * Arquitectura modular que permite aumentar la capacidad de procesamiento sin degradar el servicio.
+* **Mantenibilidad:**
+    * Código fuente documentado y organizado bajo estándares de limpieza.
+
+---
+
 ## ⚙️ Características Funcionales
 
 | Módulo | Descripción |
 | :--- | :--- |
-| **Autenticación** | Sistema centralizado con manejo de sesiones y credenciales cifradas mediante **JWT**. |
-| **Comparativa Multitienda** | Motor de procesamiento que despliega precios y ofertas de diversas fuentes simultáneamente. |
-| **Sugerencias Dinámicas** | Interfaz intuitiva con recomendaciones para minimizar la carga cognitiva. |
-| **Monitoreo de Stock** | Verificación en tiempo real para asegurar que la consulta refleje la realidad de las góndolas. |
-| **Filtros Avanzados** | Procesamiento de comparación inmediata por categorías y artículos generales. |
-| **Dashboard de Ofertas** | Panel principal con artículos destacados basados en algoritmos de relevancia. |
-| **Optimización de Latencia** | Consultas optimizadas para el despliegue rápido desde múltiples fuentes externas. |
-
----
-
-## 🚀 Requisitos Extrafuncionales
-
-### 1. Rendimiento
-- El sistema debe responder en menos de 2 segundos.
-- Debe soportar al menos 1000 usuarios simultáneos.
-
-### 2. Seguridad
-- Las contraseñas deben almacenarse encriptadas.
-- El sistema debe usar autenticación segura (**JWT**).
-
-### 3. Usabilidad
-- La interfaz debe ser intuitiva y fácil de usar.
-- El sistema debe ser accesible desde dispositivos móviles.
-
-### 4. Disponibilidad
-- El sistema debe estar disponible el 99% del tiempo.
-
-### 5. Compatibilidad
-- Debe funcionar en navegadores Chrome, Edge y Firefox.
-
-### 6. Escalabilidad
-- El sistema debe poder aumentar su capacidad sin afectar el rendimiento.
-
-### 7. Mantenibilidad
-- El código debe estar documentado y organizado.
-
----
-
-## 🔄 Flujo del Usuario
-
-1.  **Autenticación:** El usuario accede mediante un login seguro para personalizar su experiencia.
-2.  **Dashboard Principal:** Visualización de artículos destacados y ofertas relevantes.
-3.  **Búsqueda y Filtro:** Selección de un artículo y procesamiento de la comparación multitienda.
-4.  **Visualización de Resultados:** Presentación de precios, desglose de ofertas y verificación de stock.
-
----
-
+| **Módulo de Autenticación** | Manejo de sesiones y protección de credenciales cifradas. |
+| **Comparativa Multitienda** | Despliegue simultáneo de precios y ofertas de diversas fuentes. |
+| **Sugerencias Dinámicas** | Motor de recomendaciones para agilizar la búsqueda del usuario. |
+| **Monitoreo de Stock Real** | Sincronización con góndolas virtuales para reflejar la realidad del mercado. |
+| **Dashboard de Ofertas** | Panel de control con artículos destacados por relevancia. |
 
 ---
 
 ## 🎨 Diseño (Figma)
-Puedes revisar el prototipo funcional en el siguiente enlace:
+Puedes revisar el prototipo funcional y los diagramas visuales en el siguiente enlace:
 🔗 [Prototipo en Figma](https://rack-studio-58141370.figma.site/login)
