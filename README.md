@@ -28,14 +28,14 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ## 📋 Historias de Usuario (Backlog)
 
-| ID | Nombre | Issue |
-| :--- | :--- | :--- |
-| **US-01** | Registrar cuenta de usuario | 12|
-| **US-02** | Iniciar sesión | 13 |
-| **US-03** | Búsqueda de productos por filtros | 14 |
-| **US-04** | Comparación de precios multitienda | 15 |
-| **US-05** | Visualización de disponibilidad de stock | 16 |
-| **US-06** | Dashboard de ofertas destacadas | 17 |
+| ID | Nombre |
+| :--- | :--- | 
+| **US-01** | Registrar cuenta de usuario 
+| **US-02** | Iniciar sesión 
+| **US-03** | Búsqueda de productos por filtros 
+| **US-04** | Comparación de precios multitienda 
+| **US-05** | Visualización de disponibilidad de stock 
+| **US-06** | Dashboard de ofertas destacadas 
 
 
 
