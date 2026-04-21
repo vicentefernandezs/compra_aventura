@@ -20,16 +20,11 @@ Se seleccionó una arquitectura multicapa distribuida debido a que el sistema re
 
 ## 2. Diagrama de Arquitectura
 
-El sistema se estructura en las siguientes capas:
+ 
 
-- **Capa de Presentación (Frontend)** → Interfaz del usuario
-- **Capa de Acceso y Seguridad (API Gateway)** → Autenticación y control de acceso
-- **Capa de Lógica de Negocio (Backend)** → Comparación de precios y procesamiento de datos
-- **Capa de Integración (Adaptadores)** → Conexión con APIs externas de supermercados
-- **Capa de Datos (Persistencia + Caché)** → Base de datos y almacenamiento temporal
+<img width="901" height="551" alt="diagramaarquitectura drawio" src="https://github.com/user-attachments/assets/164d8775-dbb8-4378-88dd-54fa2cd65c3c" />
 
-```md
-![Diagrama de Arquitectura](./diagrama_arquitectura.png)
+ 
 
 ## 3. Descomposición Modular
 
@@ -65,14 +60,17 @@ El sistema se estructura en las siguientes capas:
 ### Decisión 1
 - **Decisión:** Usar arquitectura multicapa distribuida.
 - **Motivación:** Separar responsabilidades y facilitar escalabilidad.
-- **Impacto:** Mejora la mantenibilidad.
+- **Alternativas consideradas:** Arquitectura monolítica simple.
+- **Impacto:** Mejora la mantenibilidad y la organización del sistema.
 
 ### Decisión 2
 - **Decisión:** Implementar autenticación con JWT.
 - **Motivación:** Cumplir requisitos de seguridad (REF-04).
-- **Impacto:** Acceso seguro al sistema.
+- **Alternativas consideradas:** Autenticación basada en sesiones tradicionales.
+- **Impacto:** Permite un acceso más seguro y controlado al sistema.
 
 ### Decisión 3
 - **Decisión:** Usar Redis como caché.
 - **Motivación:** Reducir tiempos de respuesta (REF-01).
-- **Impacto:** Mejor rendimiento.
+- **Alternativas consideradas:** Consultas directas a la base de datos o a APIs externas sin caché.
+- **Impacto:** Mejora el rendimiento y reduce la latencia.
