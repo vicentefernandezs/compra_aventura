@@ -26,17 +26,20 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 ---
 
-## 📋 Historias de Usuario (Backlog)
+## 📋 Lista de Historias de Usuario
 
-| ID | Nombre |
-| :--- | :--- | 
-| **US-01** | Registrar cuenta de usuario 
-| **US-02** | Iniciar sesión 
-| **US-03** | Búsqueda de productos por filtros 
-| **US-04** | Comparación de precios multitienda 
-| **US-05** | Visualización de disponibilidad de stock 
-| **US-06** | Dashboard de ofertas destacadas 
-
+| ID | Nombre | Issue |
+| :--- | :--- | :--- |
+| **US-01** | Búsqueda comparativa por nombre | [Issue #1](#) |
+| **US-02** | Manejo de productos no encontrados | [Issue #2](#) |
+| **US-03** | Ordenar por precio y alertas de baja | [Issue #3](#) |
+| **US-04** | Carga masiva de precios (CSV) y patrocinios | [Issue #4](#) |
+| **US-05** | Resiliencia de servidores y búsqueda por voz | [Issue #5](#) |
+| **US-06** | Priorización de resultados por GPS | [Issue #6](#) |
+| **US-07** | Registro de nuevos usuarios | [Issue #7](#) |
+| **US-08** | Inicio de sesión seguro con JWT | [Issue #8](#) |
+| **US-09** | Sugerencias dinámicas de búsqueda | [Issue #9](#) |
+| **US-10** | Filtros avanzados por categoría y tienda | [Issue #10](#) |
 
 
 ---
