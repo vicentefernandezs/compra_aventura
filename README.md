@@ -30,7 +30,7 @@ Nuestro proyecto aborda la falta de transparencia en el mercado de consumo masiv
 
 | ID | Nombre | Issue |
 | :--- | :--- | :--- |
-| **US-01** | Búsqueda comparativa por nombre | [Issue #1](#) |
+| **US-01** | Búsqueda comparativa por nombre | [Issue #1](https://github.com/vicentefernandezs/compra_aventura/issues/1) |
 | **US-02** | Manejo de productos no encontrados | [Issue #2](#) |
 | **US-03** | Ordenar por precio y alertas de baja | [Issue #3](#) |
 | **US-04** | Carga masiva de precios (CSV) y patrocinios | [Issue #4](#) |
